@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  frontend:
+    image: filippdocker
+    build:
+      context: ./app
+    ports:
+      - 8080:8080
+    volumes:
+      - ./app:/bindmount:rw
